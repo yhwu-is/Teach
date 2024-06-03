@@ -1,5 +1,5 @@
-site_name: yhwu_is's Notes
-site_url: https://yhwu-is.github.io/Notes
+site_name: yhwu_is's Teaching Notes
+site_url: https://yhwu-is.github.io/Teach
 site_author: yhwu_is
 
 theme:
@@ -43,36 +43,11 @@ repo_name: GitHub仓库 # 右上角的名字
 nav: 
   - Welcome: index.md
   - 数学: 
-    - 线性代数: math/linear_algebra/index.md
-    - 数学分析: math/math_analysis/index.md
-    # - 实分析:
-    # - 泛函分析:
-    # - 拓扑学:
-    # - 微分几何:
-    # - 抽象代数:
-    - 统计学: math/statistics/index.md
+    - 线性代数: 
+      - 简介: math/linear_algebra/index.md
   - 理论计算机基础:
-    - 数据结构与算法分析: 
+    - 高级数据结构与算法分析: 
       - 引言与基础知识: tcs/dsa/dsa0.md
-    - 计算理论基础:
-      - 导言与预备知识: tcs/BasicTC/TC0.md
-      - 有限自动机与正则语言: tcs/BasicTC/TC1.md
-      - 下推自动机与上下文无关语言: tcs/BasicTC/TC2.md
-      - Church-Turing 论题: tcs/BasicTC/TC3.md
-      - 可判定性: tcs/BasicTC/TC4.md
-      - 可归约性: tcs/BasicTC/TC5.md
-    - 计算理论进阶: 
-      - 时间复杂性: tcs/AdvancedTC/time.md
-      - 空间复杂性: tcs/AdvancedTC/space.md
-      - 概率算法: tcs/AdvancedTC/probabilistic.md
-      - 复杂性层次: tcs/AdvancedTC/intractability.md
-    - 量子信息基础:
-      - 希尔伯特空间: tcs/BasicQuantumInfo/hilbert.md
-    - 优化理论与方法:
-      - 引言与数学基础: tcs/optimization/P1.md
-      - 光滑凸优化基础: tcs/optimization/P2.md
-      - 下降方法: tcs/optimization/P3.md
-      - 一般凸优化: tcs/optimization/P4.md
     - 编程语言原理:
       - lambda表达式: tcs/pfpl/lambda.md
       - 判断与规则: tcs/pfpl/P1.md
@@ -80,57 +55,9 @@ nav:
       - 全函数: tcs/pfpl/P3.md
       - 有限数据类型: tcs/pfpl/P4.md
       - 无限数据类型: tcs/pfpl/P6.md
-  - 算法博弈论:
-    - 微观经济学与博弈论基础: 
-      - 导言: algt/BasicGameTheory/intro.md
-      - 偏好与效用: algt/BasicGameTheory/utility.md
-      - 贝叶斯决策理论基础: algt/BasicGameTheory/bayesian.md
-      - 机制设计基础: algt/BasicGameTheory/mechanism.md
-    - 算法博弈论二十讲:
-      - 势博弈: algt/twenty_lectures/potential.md
-    - 机制设计与近似:
-      - 无先验知识的机制设计: algt/MechDesignApprox/prior-free.md
-  - 经济与金融学类: 
-    - 公司金融: 
-      - 简介: eco_fin/corporate/P0.md
-      - 财务报表: eco_fin/corporate/P1.md
-      - 现金流: eco_fin/corporate/P2.md
-      - 风险与收益: eco_fin/corporate/P3.md
-      - 现金管理: eco_fin/corporate/P4.md
-      - 一些例题: eco_fin/corporate/exercise.md
-  - 计算机类:
-    - 计算机网络:
-      - 2022-2023期末复习: cs/network/review.md
-      - 网络安全复习: cs/network/websec.md
-      - 参考习题: cs/network/exercise.md
-    - 网络安全:
-      - 面向信息安全的信号处理: 
-        - 信号与系统基础: cs/web/signals/P1.md
-        - 信号处理与安全: cs/web/signals/P2.md
-        - 基于Matlab的实验: cs/web/signals/P3.md
-    - 硬件与系统安全:
-      - 软件安全: 
-        - 基本原则与缓冲区溢出漏洞: cs/system/software/P1.md
-        - ROP: cs/system/software/P2.md
-        - 格式字符串漏洞: cs/system/software/P3.md
-        - 堆溢出: cs/system/software/P4.md
-        - 杂项: cs/system/software/P5.md
-    - 数据安全:
-      - 密码学: 
-        - 古典密码: cs/data/crypto/P1.md
-        - 对称加密算法: cs/data/crypto/P2.md
-        - RSA加密算法: cs/data/crypto/P3.md
-        - 椭圆曲线加密算法: cs/data/crypto/P4.md
-      - 数据安全与隐私保护: 
-        - 访问控制: cs/data/data privacy/P1.md
-        - 同态加密: cs/data/data privacy/P2.md
-        - 安全多方计算: cs/data/data privacy/P3.md
-        - 差分隐私: cs/data/data privacy/P4.md
-    - 区块链安全: 
-      - 区块链技术原理: cs/blockchain/basic.md
-  - 论文阅读:
-    - 拍卖与机制设计: 
-      - compatitive auctions and digital goods: paper/auction/P1.md
+  - 计算与经济:
+    - 数据要素市场:
+      - 课程简介与绪论: ec/data_market/intro.md
 
 copyright: Copyright &copy; 2023-2024 吴一航
 
