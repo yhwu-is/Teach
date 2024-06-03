@@ -1,0 +1,184 @@
+site_name: yhwu_is's Notes
+site_url: https://yhwu-is.github.io/Notes
+site_author: yhwu_is
+
+theme:
+  name: material
+  language: 'zh'
+  palette:
+    - scheme: default # 日间模式
+      primary: indigo # 上方的
+      accent: cyan # 链接等可交互元件的高亮色
+      toggle:
+        icon: material/weather-night # 图标
+        name: 切换至夜间模式 # 鼠标悬浮提示
+    - scheme: slate # 夜间模式
+      primary: black 
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至日间模式
+  features: 
+    - content.code.annotate
+    - navigation.footer
+    - navigation.instant #- header.autohide  #自动隐藏
+    #- announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
+    - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+    - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
+    #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    #- navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    #- navigation.expand # 打开Tab时左侧目录全部展开
+    - navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    - search.share #搜索分享按钮
+  icon: 
+    repo: fontawesome/brands/github #右上角图标
+  font: false
+
+edit_uri: edit/main/docs # 编辑按钮跳转的链接 
+repo_url: https://github.com/yhwu-is/Notes # 右上角点击跳转的链接
+repo_name: GitHub仓库 # 右上角的名字
+nav: 
+  - Welcome: index.md
+  - 数学: 
+    - 线性代数: math/linear_algebra/index.md
+    - 数学分析: math/math_analysis/index.md
+    # - 实分析:
+    # - 泛函分析:
+    # - 拓扑学:
+    # - 微分几何:
+    # - 抽象代数:
+    - 统计学: math/statistics/index.md
+  - 理论计算机基础:
+    - 数据结构与算法分析: 
+      - 引言与基础知识: tcs/dsa/dsa0.md
+    - 计算理论基础:
+      - 导言与预备知识: tcs/BasicTC/TC0.md
+      - 有限自动机与正则语言: tcs/BasicTC/TC1.md
+      - 下推自动机与上下文无关语言: tcs/BasicTC/TC2.md
+      - Church-Turing 论题: tcs/BasicTC/TC3.md
+      - 可判定性: tcs/BasicTC/TC4.md
+      - 可归约性: tcs/BasicTC/TC5.md
+    - 计算理论进阶: 
+      - 时间复杂性: tcs/AdvancedTC/time.md
+      - 空间复杂性: tcs/AdvancedTC/space.md
+      - 概率算法: tcs/AdvancedTC/probabilistic.md
+      - 复杂性层次: tcs/AdvancedTC/intractability.md
+    - 量子信息基础:
+      - 希尔伯特空间: tcs/BasicQuantumInfo/hilbert.md
+    - 优化理论与方法:
+      - 引言与数学基础: tcs/optimization/P1.md
+      - 光滑凸优化基础: tcs/optimization/P2.md
+      - 下降方法: tcs/optimization/P3.md
+      - 一般凸优化: tcs/optimization/P4.md
+    - 编程语言原理:
+      - lambda表达式: tcs/pfpl/lambda.md
+      - 判断与规则: tcs/pfpl/P1.md
+      - 静态与动态: tcs/pfpl/P2.md
+      - 全函数: tcs/pfpl/P3.md
+      - 有限数据类型: tcs/pfpl/P4.md
+      - 无限数据类型: tcs/pfpl/P6.md
+  - 算法博弈论:
+    - 微观经济学与博弈论基础: 
+      - 导言: algt/BasicGameTheory/intro.md
+      - 偏好与效用: algt/BasicGameTheory/utility.md
+      - 贝叶斯决策理论基础: algt/BasicGameTheory/bayesian.md
+      - 机制设计基础: algt/BasicGameTheory/mechanism.md
+    - 算法博弈论二十讲:
+      - 势博弈: algt/twenty_lectures/potential.md
+    - 机制设计与近似:
+      - 无先验知识的机制设计: algt/MechDesignApprox/prior-free.md
+  - 经济与金融学类: 
+    - 公司金融: 
+      - 简介: eco_fin/corporate/P0.md
+      - 财务报表: eco_fin/corporate/P1.md
+      - 现金流: eco_fin/corporate/P2.md
+      - 风险与收益: eco_fin/corporate/P3.md
+      - 现金管理: eco_fin/corporate/P4.md
+      - 一些例题: eco_fin/corporate/exercise.md
+  - 计算机类:
+    - 计算机网络:
+      - 2022-2023期末复习: cs/network/review.md
+      - 网络安全复习: cs/network/websec.md
+      - 参考习题: cs/network/exercise.md
+    - 网络安全:
+      - 面向信息安全的信号处理: 
+        - 信号与系统基础: cs/web/signals/P1.md
+        - 信号处理与安全: cs/web/signals/P2.md
+        - 基于Matlab的实验: cs/web/signals/P3.md
+    - 硬件与系统安全:
+      - 软件安全: 
+        - 基本原则与缓冲区溢出漏洞: cs/system/software/P1.md
+        - ROP: cs/system/software/P2.md
+        - 格式字符串漏洞: cs/system/software/P3.md
+        - 堆溢出: cs/system/software/P4.md
+        - 杂项: cs/system/software/P5.md
+    - 数据安全:
+      - 密码学: 
+        - 古典密码: cs/data/crypto/P1.md
+        - 对称加密算法: cs/data/crypto/P2.md
+        - RSA加密算法: cs/data/crypto/P3.md
+        - 椭圆曲线加密算法: cs/data/crypto/P4.md
+      - 数据安全与隐私保护: 
+        - 访问控制: cs/data/data privacy/P1.md
+        - 同态加密: cs/data/data privacy/P2.md
+        - 安全多方计算: cs/data/data privacy/P3.md
+        - 差分隐私: cs/data/data privacy/P4.md
+    - 区块链安全: 
+      - 区块链技术原理: cs/blockchain/basic.md
+  - 论文阅读:
+    - 拍卖与机制设计: 
+      - compatitive auctions and digital goods: paper/auction/P1.md
+
+copyright: Copyright &copy; 2023-2024 吴一航
+
+extra:
+  generator: false  #删除页脚显示“使用 MkDocs 材料制造”
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yhwu-is
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<yhwu_is@zju.edu.cn> #联系方式
+
+plugins:
+  - search
+  - tags  #标签
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - meta
+  - def_list
+  - attr_list
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
