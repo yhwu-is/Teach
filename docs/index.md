@@ -7,7 +7,7 @@
 1. [线性代数 I / II（H）](./math/linear_algebra/index.md)，辅学主讲
     - 浙江大学竺可桢学院辅学精品课程
     - 教材：[《线性代数：未竟之美》](https://github.com/yhwu-is/Linear-Algebra-Left-Undone)，公开在 GitHub 上
-2. [数据要素市场](./ec/data_market/intro.md)，助教
+2. [数据要素市场](./ec/data_market/00-intro.md)，助教
     - 浙江大学计算机科学与技术学院大二暑期课程
     - 教材：《数据要素市场》（正在编写中）
 

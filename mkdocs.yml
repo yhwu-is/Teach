@@ -56,8 +56,12 @@ nav:
       - 有限数据类型: tcs/pfpl/P4.md
       - 无限数据类型: tcs/pfpl/P6.md
   - 计算与经济:
+    - 计算经济研讨班:
+      - 2024-2025 春夏: ec/seminar/25sp.md
     - 数据要素市场:
-      - 课程简介与绪论: ec/data_market/intro.md
+      - 课程简介: ec/data_market/00-intro.md
+      - 绪论: ec/data_market/01-intro.md
+      - 课程资源: ec/data_market/resource.md
 
 copyright: Copyright &copy; 2023-2024 吴一航
 
