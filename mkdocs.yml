@@ -47,7 +47,7 @@ nav:
       - 简介: math/linear_algebra/index.md
   - 理论计算机基础:
     - 高级数据结构与算法分析: 
-      - 引言与基础知识: tcs/dsa/dsa0.md
+      - 课程讲义: tcs/ads/ads.md
     - 编程语言原理:
       - lambda表达式: tcs/pfpl/lambda.md
       - 判断与规则: tcs/pfpl/P1.md
