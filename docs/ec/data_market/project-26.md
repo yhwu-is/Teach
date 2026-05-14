@@ -127,7 +127,12 @@
     - 基于上述讨论，尝试改进机制，并且使用 agent 模拟验证改进机制的优越性，例如能实现更高的收益，福利或公平性等
 - 例子：可以用 agent 模拟拍卖的保留价格对卖家收益的影响，首先通过 prompt 工程设置好拍卖场景以及买家对物品的估值等背景信息，然后改变保留价格并观察卖家收益的变化，与理论结果相比较，分析与理论结果相似或不同的原因，并且基于分析找到对于 agent（乃至真实人类竞拍者）而言在不同场景下的最优保留价格
 - 可供参考的文献（这些文献模拟的是一般经济学场景，而非数据定价机制，但你可以参考其模拟的思路和代码来设计你自己的模拟）
-    
+    - [EconAgent: Large Language Model-Empowered Agents for Simulating Macroeconomic Activities](http://aclanthology.org/2024.acl-long.829.pdf)
+    - [When AI Meets Finance (StockAgent): Large Language Model-based Stock Trading in Simulated Real-world Environments](https://arxiv.org/pdf/2407.18957)
+    - [AgenticPay: A Multi-Agent LLM Negotiation System for Buyer–Seller Transactions](https://arxiv.org/pdf/2602.06008)
+    - [Magentic Marketplace: An Open-Source Environment for Studying Agentic Markets](https://arxiv.org/pdf/2510.25779)
+    - [LLM Economist: Large Population Models and Mechanism Design in Multi-Agent Generative Simulacra](https://arxiv.org/pdf/2507.15815)
+    - [TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets](https://arxiv.org/pdf/2502.01506)
 
 ## 复现与改进类选题（C）
 
