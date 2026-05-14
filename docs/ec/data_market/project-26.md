@@ -42,7 +42,42 @@
 
 ## 工具使用
 
+!!!warning "重要提示"
+    本段内容结合了个人经验与大语言模型的调研结果，同学们应当自己核实相关工具的功能、价格和使用方法等信息，并且根据自己的实际情况选择合适的工具。此外，对于大作业而言，**最重要的是形成一套稳定的工作流**，让最适合的（能力最强或性价比最高）的工具完成其最适合的任务（包括文献阅读与检索、方案设计、代码实现、PPT 和报告撰写等），并且学会输入好的 prompt 让工具真正帮助你实现目标，并保证自己对工具生成内容的理解和把控。
 
+    **时刻记住，工具可以显著提高效率，但不能替代理解，请务必自己核查并理解工具生成的内容。虽然本课程鼓励（甚至要求）使用工具，但最后评分看的是你是否把问题想清楚、做清楚、写清楚，仅依赖工具是无法达成这一点的。**
+
+### Vibe coding 工具
+
+- 如果希望尽量免费
+    - [ModelScope](https://modelscope.cn/)：ModelScope 是一个 “模型即服务”(MaaS) 平台，旨在汇集来自 AI 社区的最先进的机器学习模型。其中提供了多种大语言模型，并且每个账号提供每日 2000 次免费 API 调用机会。
+    - [GitHub Copilot](https://github.com/features/copilot/plans)：和 VS Code / JetBrains / GitHub 生态结合最紧，适合把大语言模型自然地嵌入日常编码流程。`Copilot Free` 可以零成本体验，适合同学们做日常补全、简单问答和小范围修改；但**自 2026.4.20 起 student / Pro / Pro+ 的新开通暂时暂停**，因此如果此前没有注册，可以先用免费版试验，但如果需要更强的能力可能需要考虑充值或者使用其他工具。
+    - [Gemini CLI](https://github.com/google-gemini/gemini-cli)：开源的命令行 agent。官方 README 显示，使用个人 Google 账号可以获得免费额度（60 requests/min，1000 requests/day），并且自带搜索、文件操作、shell 命令和 MCP 支持。
+    - [Cline](https://docs.cline.bot/cline-overview)：开源 coding agent，可以在编辑器或终端中工作，但是需要自己配置 API，实际成本取决于你接入的模型与使用强度。
+
+- 如果愿意付费且希望能力强
+    - [Cursor](https://cursor.com/pricing)：不必多言，相信各位熟悉这一产品，其将 AI 深度集成到编程工作流程。官方页面显示有 `Hobby Free`，`Pro` 为 **20 美元 / 月**。
+    - [Codex](https://openai.com/zh-Hans-CN/codex/)：OpenAI 的编程工具，可以使用强大的 ChatGPT 模型来辅助代码编写、调试和优化。如果你充值了 ChatGPT Plus（**20 美元 / 月**）及以上的套餐，就可以使用 Codex 了。
+    - [Claude Code](https://www.anthropic.com/product/claude-code)：Anthropic 的命令行 coding system，如果你更习惯 terminal workflow，它通常会非常顺手。Claude 官方页面显示 `Pro` 月付价格为 **20 美元 / 月**，并包含 Claude Code 访问权限。
+    - 国内大语言模型提供商（如 Deepseek、GLM、Kimi、Qwen，MiMo 等）也在不断迭代其 coding 能力，价格和使用方式各不相同，相较于上述国外大语言模型的价格会低很多，当然能力也相对减弱一些，建议同学们根据自己的实际情况进行选择。
+
+### Autoresearch 工具
+
+- 做网页层面的初步调研、问题拆解和方案发散
+    - 大语言模型：ChatGPT、Gemini、Claude 等国外大语言模型以及 Deepseek、GLM、Kimi、Qwen 等国内大语言模型都在不断迭代其信息检索和综合能力，因此可以使用（免费或付费）网页版面进行初步的调研和方案设计，但需要注意部分内容可能存在幻觉，甚至文章可能不存在，因此需要自己核实和判断。
+    - [ChatGPT Deep Research](https://help.openai.com/en/articles/10500283-deep-research)：适合做多步骤信息综合。官方文档显示，它支持限制特定站点、允许优先搜索某些站点、连接 Google Drive / SharePoint 等数据源，并输出带 citations 或 source links 的长报告。
+    - [Gemini Deep Research](https://blog.google/products-and-platforms/products/gemini/tips-how-to-use-deep-research/)：Google 官方文档表明，Deep Research 已“now available for anyone to try”。它适合做广泛的网页扫描、整理长报告，并且和 Google 生态的衔接较自然。
+    - [Perplexity Deep Research](https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research)：Perplexity 官方说明，Deep Research 对所有人开放，非 Pro 用户每天只有有限次数，Pro 用户有更高额度。它的优势是**速度快、引用直观、适合快速找到最新网页资料**，很适合做“这个方向最近有哪些工作/博客/产品/观点”的第一轮扫描。
+
+- 做学术文献调研
+    - [Elicit](https://elicit.com/pricing)：官方页面显示，`Basic` 免费版包含有限的 Research Agent、每月 2 个 automated reports、无限 paper search / summary / paper chat，并支持 Zotero 导入。它很适合拿来回答“这个方向上有哪些代表性论文”“某篇文章的方法和 baseline 是什么”“几篇论文之间有哪些差异”等问题。
+    - [Consensus](https://help.consensus.app/en/articles/10087865-subscription-plans)：更偏“循证问答”。官方帮助中心显示，免费版有 unlimited paper searches、每月 15 个 Pro messages、3 个 Deep reviews、10 个 Study Snapshots。它很适合拿来问“现有研究总体是否支持某个结论”“某个机制是否通常提高某项指标”，但它的回答依然只能作为起点，不能替代你自己阅读原文。
+    - [ResearchRabbit](https://www.researchrabbit.ai/pricing)：非常适合做引文扩展和 related work 挖掘。官方页面显示其 `Free Forever` 层已经包含 unlimited search、unlimited collections、library uploads、collaboration，以及最多 50 篇 seed articles 的扩展搜索。它的强项不在于直接给你写一段综述，而在于**从 1-3 篇核心论文出发，把这个方向的“文献网络”挖出来**。
+
+!!!warning "重要提示"
+    无论使用哪种 autoresearch 工具，最终都应当回到论文原文、会议/期刊官网、作者主页或可靠索引站进行核对。推荐至少搭配使用 [DBLP](https://dblp.org/)、[Google Scholar](https://scholar.google.com/)、[Semantic Scholar](https://www.semanticscholar.org/) 这类基础检索工具。
+    
+    对于 C 类复现题目，论文原文中的问题定义、理论证明、实验设置与结果等都建议自己逐项核对，不要只依赖大语言模型给出的总结。
 
 ## 自由类选题（A）
 
@@ -91,6 +126,8 @@
     - 分析这些相似性和差距背后的原因，例如是因为 agent 模拟本身与人类行为相去甚远，还是因为机制本身在实际中存在一些问题（例如过于理想化的假设等），甚至可以从行为经济学的角度分析非理性人类行为对机制结果的影响等
     - 基于上述讨论，尝试改进机制，并且使用 agent 模拟验证改进机制的优越性，例如能实现更高的收益，福利或公平性等
 - 例子：可以用 agent 模拟拍卖的保留价格对卖家收益的影响，首先通过 prompt 工程设置好拍卖场景以及买家对物品的估值等背景信息，然后改变保留价格并观察卖家收益的变化，与理论结果相比较，分析与理论结果相似或不同的原因，并且基于分析找到对于 agent（乃至真实人类竞拍者）而言在不同场景下的最优保留价格
+- 可供参考的文献（这些文献模拟的是一般经济学场景，而非数据定价机制，但你可以参考其模拟的思路和代码来设计你自己的模拟）
+    
 
 ## 复现与改进类选题（C）
 
