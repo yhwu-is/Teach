@@ -126,6 +126,7 @@
     - 分析这些相似性和差距背后的原因，例如是因为 agent 模拟本身与人类行为相去甚远，还是因为机制本身在实际中存在一些问题（例如过于理想化的假设等），甚至可以从行为经济学的角度分析非理性人类行为对机制结果的影响等
     - 基于上述讨论，尝试改进机制，并且使用 agent 模拟验证改进机制的优越性，例如能实现更高的收益，福利或公平性等
 - 例子：可以用 agent 模拟拍卖的保留价格对卖家收益的影响，首先通过 prompt 工程设置好拍卖场景以及买家对物品的估值等背景信息，然后改变保留价格并观察卖家收益的变化，与理论结果相比较，分析与理论结果相似或不同的原因，并且基于分析找到对于 agent（乃至真实人类竞拍者）而言在不同场景下的最优保留价格
+- 例子：如下面的参考文献第一篇通过 agent 技术引导 agent 在数据市场做出均衡一致的决策，你可以进一步研究如何让 agent 在有更具体的下游任务（如选择数据训练机器学习模型）的数据市场中发挥作用，或者思考如何让 agent 在数据市场中做出更合理的决策（例如利润最大化、福利最大化等），并且基于这些思路设计改进机制并验证其优越性
 - 可供参考的文献（其中第一篇文献是模拟数据市场的，其余文献模拟的是一般经济学场景而非数据定价机制，但你可以参考其模拟的思路和代码来设计你自己的模拟）
     - [Datamart-Agent: LLM-Driven Game-Theoretic Agent for Data Marketplace Modeling](https://aclanthology.org/2026.findings-acl.1628.pdf)
     - [EconAgent: Large Language Model-Empowered Agents for Simulating Macroeconomic Activities](http://aclanthology.org/2024.acl-long.829.pdf)
