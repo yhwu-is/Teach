@@ -34,15 +34,15 @@
 | 红黑树，B+ 树 | [讲义](notes/lec2.pdf) |  |
 | 倒排索引 | [讲义](notes/lec3.pdf) |  |
 | 左式堆，斜堆 | [讲义](notes/lec4.pdf) |  |
-| 二项堆 | [讲义](notes/lec5.pdf) |  |
+| 二项堆 | [讲义](notes/lec5.pdf) | 含斐波那契堆 |
 | 回溯法 | [讲义](notes/lec6.pdf) |  |
 | 分治法 | [讲义](notes/lec7.pdf) |  |
 | 动态规划 | [讲义](notes/lec8.pdf)|  |
 | 贪心算法 | [讲义](notes/lec9.pdf) |  |
-| NP 完全性 | [讲义](notes/lec10.pdf) | 内容较难，可以略过 |
+| NP 完全性 | [讲义](notes/lec10.pdf) |  |
 | 近似算法 | [讲义](notes/lec11.pdf) |  |
 | 局部搜索 | [讲义](notes/lec12.pdf) |  |
-| 随机算法 |  | 暂无讲义 |
+| 随机算法 | [讲义](notes/lec13.pdf) |  |
 | 并行算法 | [讲义](notes/lec14.pdf) |  |
 | 外部排序 | [讲义](notes/lec15.pdf) |  |
 
