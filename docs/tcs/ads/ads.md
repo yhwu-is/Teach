@@ -39,7 +39,7 @@
 | 分治法 | [讲义](notes/lec7.pdf) |  |
 | 动态规划 | [讲义](notes/lec8.pdf)|  |
 | 贪心算法 | [讲义](notes/lec9.pdf) |  |
-| NP 完全性 | [讲义](notes/lec10.pdf) |  |
+| NP 完全性 | [讲义](notes/lec10.pdf) | 难度较大，可以适当跳过 |
 | 近似算法 | [讲义](notes/lec11.pdf) |  |
 | 局部搜索 | [讲义](notes/lec12.pdf) |  |
 | 随机算法 | [讲义](notes/lec13.pdf) |  |
